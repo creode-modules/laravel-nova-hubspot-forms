@@ -8,11 +8,21 @@ use Modules\Pages\app\Abstracts\PageBlockAbstract;
 class HubSpotFormPageBlock extends PageBlockAbstract
 {
 
+    /**
+    * @var string $label Admin Label of Flexible Content Layout
+    * @var string $name Name of Flexible Content Layout
+    * @var string $view Path to Blade Template
+    */
+
     protected $label = 'HubSpot Form';
     protected $name = 'hubspot-form';
     protected $view = 'laravel-nova-hubspot-forms::hubspot-form';
 
-    protected function fields()
+
+    /**
+     * @inheritdoc
+     */
+    protected function fields(): array
     {
         return [
             Text::make('Form ID', 'formId'),
