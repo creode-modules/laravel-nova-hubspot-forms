@@ -3,7 +3,7 @@
 namespace Creode\LaravelNovaHubspotForms;
 
 use Laravel\Nova\Fields\Text;
-use Modules\Pages\app\Abstracts\PageBlockAbstract;
+use Creode\NovaPageBuilder\Abstracts\PageBlockAbstract;
 
 class HubSpotFormPageBlock extends PageBlockAbstract
 {
